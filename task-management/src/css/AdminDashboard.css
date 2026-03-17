@@ -1,0 +1,89 @@
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Full layout */
+.dashboard-container{
+  display:flex;
+  height:100vh;
+  background:#f4f6f9;
+}
+
+/* Sidebar */
+.sidebar{
+  width:250px;
+  background:#1e293b;
+  color:white;
+  padding:25px 20px;
+  display:flex;
+  flex-direction:column;
+}
+
+/* Logo */
+.logo{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:40px;
+}
+
+/* Menu */
+.menu{
+  list-style:none;
+}
+
+.menu li{
+  padding:12px 10px;
+  margin-bottom:10px;
+  border-radius:6px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+/* Hover effect */
+.menu li:hover{
+  background:#334155;
+}
+
+/* Main section */
+.main-section{
+  flex:1;
+  padding:40px;
+  overflow:auto;
+}
+
+/* Welcome text */
+.welcome{
+  margin-bottom:30px;
+  font-size:24px;
+  font-weight:600;
+}
+
+/* Cards container */
+.cards{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap:25px;
+}
+
+/* Individual card */
+.card{
+  background:white;
+  padding:40px 20px;
+  border-radius:10px;
+  text-align:center;
+  font-size:18px;
+  font-weight:500;
+  cursor:pointer;
+  border:1px solid #e5e7eb;
+  transition:0.25s;
+}
+
+/* Card hover */
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}

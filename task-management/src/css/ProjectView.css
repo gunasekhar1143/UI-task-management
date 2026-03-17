@@ -1,0 +1,131 @@
+.project-view-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Project Title */
+
+.project-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Tabs Container */
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Tab Button */
+
+.tab {
+  padding: 10px 18px;
+  border: none;
+  background-color: #f4f6f8;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+/* Hover */
+
+.tab:hover {
+  background-color: #e4e6e8;
+}
+
+/* Active Tab */
+
+.tab.active {
+  background-color: #1976d2;
+  color: white;
+}
+
+/* Tab Content Card */
+
+.tab-content {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Buttons inside overview/members/tasks */
+
+.action-btn {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background-color: #125ea8;
+}
+
+/* Delete button */
+
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+/* Members list */
+
+.member-list {
+  margin-top: 15px;
+}
+
+.member-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Add members button */
+
+.add-member-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-member-btn:hover {
+  background-color: #45a049;
+}
+
+/* Users list when selecting members */
+
+.users-list {
+  margin-top: 15px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.user-item:last-child {
+  border-bottom: none;
+}

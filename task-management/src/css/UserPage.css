@@ -1,0 +1,55 @@
+/* make page occupy full width */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  width: 100%;
+}
+
+/* top section */
+
+input {
+  padding: 8px;
+  margin: 15px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  background: none;   /* remove colors */
+  cursor: pointer;
+}
+
+/* table full width */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* table header */
+
+th {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+/* table cells */
+
+td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* optional row hover */
+
+tr:hover {
+  background-color: #f5f5f5;
+}

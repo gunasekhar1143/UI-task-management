@@ -1,0 +1,122 @@
+.tasks-page{
+  padding:10px;
+}
+
+/* HEADER */
+
+.tasks-header{
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:20px;
+
+}
+
+.tasks-header input{
+
+  padding:8px 12px;
+  border:1px solid #ddd;
+  border-radius:6px;
+
+  width:250px;
+
+}
+
+/* TABLE */
+
+.tasks-table table{
+
+  width:100%;
+  border-collapse:collapse;
+
+  background:white;
+
+  border-radius:8px;
+  overflow:hidden;
+
+}
+
+/* TABLE HEAD */
+
+.tasks-table th{
+
+  background:#f5f6fa;
+
+  text-align:left;
+  padding:12px;
+
+  font-size:14px;
+
+}
+
+/* TABLE BODY */
+
+.tasks-table td{
+
+  padding:12px;
+  border-top:1px solid #eee;
+
+  font-size:14px;
+
+}
+
+.tasks-table tr:hover{
+
+  background:#fafafa;
+
+}
+
+/* STATUS BADGE */
+
+.status-badge{
+
+  padding:4px 10px;
+  border-radius:12px;
+
+  font-size:12px;
+  font-weight:500;
+
+}
+
+/* STATUS COLORS */
+
+.todo{
+  background:#e3f2fd;
+  color:#1976d2;
+}
+
+.inprogress{
+  background:#fff3cd;
+  color:#ff9800;
+}
+
+.completed{
+  background:#e8f5e9;
+  color:#2e7d32;
+}
+
+/* DROPDOWN */
+
+.tasks-table select{
+
+  padding:6px 8px;
+
+  border-radius:6px;
+  border:1px solid #ddd;
+
+  cursor:pointer;
+
+}
+
+/* NO DATA */
+
+.no-data{
+
+  text-align:center;
+  padding:20px;
+
+  color:#777;
+
+}
