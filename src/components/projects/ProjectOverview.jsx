@@ -19,7 +19,7 @@ function ProjectOverview({ project, handleDelete }) {
 
         <button
           className="update-btn"
-          onClick={() => navigate(`/projects/edit/${project.id}`)}
+          onClick={() => navigate(`/admin/projects/edit/${project.id}`)}
         >
           Update
         </button>

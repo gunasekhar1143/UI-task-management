@@ -1,0 +1,78 @@
+.progress-container {
+  padding: 20px;
+}
+
+.progress-header {
+  margin-bottom: 20px;
+}
+
+.progress-header h1 {
+  margin: 0 0 6px 0;
+  font-size: 28px;
+}
+
+.progress-header p {
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+}
+
+.project-select {
+  margin-bottom: 24px;
+}
+
+.project-select select {
+  padding: 10px 12px;
+  min-width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.kanban-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.kanban-column {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 15px;
+  min-height: 400px;
+}
+
+.kanban-column h3 {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.task-card {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+}
+
+.task-card p {
+  margin: 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.empty-text {
+  margin-top: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}

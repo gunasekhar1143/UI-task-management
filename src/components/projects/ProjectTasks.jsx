@@ -265,7 +265,7 @@ function ProjectTasks({ projectId, members }) {
               <th>Description</th>
               <th>Status</th>
               <th>User</th>
-              <th>Due Date</th> {/* ✅ NEW COLUMN */}
+              <th>Due Date</th> 
               <th>Actions</th>
             </tr>
 
@@ -286,8 +286,6 @@ function ProjectTasks({ projectId, members }) {
                   </span>
                 </td>
                 <td>{task.userId}</td>
-
-
                 <td>
                   {task.dueDate
                     ? task.dueDate

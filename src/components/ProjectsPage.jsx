@@ -22,7 +22,7 @@ function ProjectsPage() {
   };
 
   const handleView = (id) => {
-    navigate(`/projects/view/${id}`);
+    navigate(`/admin/projects/view/${id}`);
   };
 
   return (
@@ -33,7 +33,7 @@ function ProjectsPage() {
 
         <button 
           className="create-btn"
-          onClick={() => navigate("/projects/create")}
+          onClick={() => navigate("/admin/projects/create")}
         >
           + Create Project
         </button>

@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import { useEffect, useState } from "react";
+import { connectWebSocket } from "../services/webSocket";
 import { getNotificationsByUserId } from "../services/notificationService";
 import "../css/dashboard.css";
 
@@ -34,6 +35,22 @@ export default function DashboardLayout({ children }) {
     return `${formattedDate} • ${formattedTime}`;
   };
 
+useEffect(() => {
+  if (userId) {
+
+    console.log("Connecting WebSocket for user:", userId);
+
+    connectWebSocket(userId, (newNotification) => {
+
+      console.log("🔥 MESSAGE RECEIVED:", newNotification);
+
+      setNotifications((prev) => [newNotification, ...prev]);
+
+    });
+
+  }
+}, [userId]);
+
   // ✅ Load user + notifications on page load
   useEffect(() => {
 
@@ -47,7 +64,9 @@ export default function DashboardLayout({ children }) {
         setEmail(decoded.sub);
         setUserId(decoded.id);
 
-        fetchNotifications(decoded.id); // ✅ AUTO FETCH
+        fetchNotifications(decoded.id); 
+
+        
 
       } catch (err) {
         console.log("Invalid token");
@@ -68,7 +87,7 @@ export default function DashboardLayout({ children }) {
 
   const logout = () => {
     localStorage.removeItem("token");
-    navigate("/login");
+    navigate("/");
   };
 
   return (
@@ -110,8 +129,10 @@ export default function DashboardLayout({ children }) {
             >
               <div className="notifications-link">
                 🔔 Notifications
-                {notifications.length > 0 && (
-                  <span className="badge">{notifications.length}</span>
+                {notifications.filter(n => !n.isRead).length > 0 && (
+                  <span className="badge">
+                    {notifications.filter(n => !n.isRead).length}
+                  </span>
                 )}
               </div>
 
@@ -152,7 +173,6 @@ export default function DashboardLayout({ children }) {
 
         </div>
 
-        {/* Page Content */}
         {children}
 
       </div>

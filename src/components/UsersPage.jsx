@@ -56,7 +56,7 @@ function UsersPage() {
           onChange={(e) => setSearch(e.target.value)}
         />
 
-        <button onClick={() => navigate("/register")}>
+        <button onClick={() => navigate("/admin/register")}>
           Add User
         </button>
       </div>

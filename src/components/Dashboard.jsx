@@ -23,7 +23,7 @@ export default function Dashboard() {
   const cards = [
     { title: "Projects", path: "/users/projects" },
     { title: "Tasks", path: "/users/tasks" },
-    { title: "Progress", path: "/progress" },
+    { title: "Progress", path: "/users/progress" },
     { title: "Performance", path: "/analytics" }
   ];
 

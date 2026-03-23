@@ -5,18 +5,6 @@ function AdminDashboard() {
   
   const navigate = useNavigate();
 
-  const token = localStorage.getItem("token");
-  const role = localStorage.getItem("role");
-
-  if (!token) {
-    return <navigate to="/login" replace />;
-  }
-
-  if (role !== "ADMIN") {
-    return <navigate to="/unauthorized" replace />;
-  }
-
-
   const cards = [
     { title: "Users", path: "/admin/users" },
     { title: "Projects", path: "/admin/projects" },
